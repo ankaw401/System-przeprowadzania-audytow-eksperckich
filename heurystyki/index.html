@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <title>standardy projektowania aplikacji mobilnych</title> 
+
+  <div id="container">
+    <div id="content">
+      <div id="menu">
+       <div id= "option">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a style="font-weight: bold ; color: #40ABCD;" href="#">Heurystyki</a></li>
+            <li> <a href="../obserwacje/index.html">Obserwacje</a></li>
+            <li><a href="../wnioski/index.html">Wnioski</a></li>
+            <li><a href="../podsumowanie/index.html">Podsumowanie</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <div id= "heuristics">
+      <div class="slider">
+  
+        <a href="#slide-1">1 </a>
+        <a href="#slide-2">2</a>
+        <a href="#slide-3">3</a>
+        <a href="#slide-4">4</a>
+        <a href="#slide-5">5</a>
+        <a href="#slide-6">6</a>
+        <a href="#slide-7">7</a>
+        <a href="#slide-8">8</a>
+        <a href="#slide-9">9</a>
+        <a href="#slide-10">10</a>
+        <a href="#slide-11">11</a>
+        <a href="#slide-12">12</a>
+      </div>
+
+      <div class="heuristic-block">
+
+        <div class="slides">
+           <div id="slide-1" >   <!--  ...........................................................slider1 -->
+                <h5>1. Pokazuj status systemu</h5>
+
+              <div id="radio-title">
+                 <div id="yesTitle">
+                  tak
+                </div>
+                <div id="noTitle">
+                  nie
+                </div> 
+                <div id="lack">
+                  nie dotyczy
+                </div>
+              </div> 
+
+               <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+            
+              <label for="first">  Widoczny tytuł zakładki w której znajduje się użytkownik.</br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Widoczny proces ładowania.</br></label>
+   
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Notyfikacja o nowych aktywnościach aplikacji w powiadomieniach.</br></label>
+   
+ 
+              <input type="radio" id="L4Y"
+              name="fourth" value="yes"class="yes">
+              <label for="L4Y"></label>
+   
+              <input type="radio" id="L4N"
+              name="fourth" value="no" class="no">
+              <label for="L4N"> </label>
+ 
+              <input type="radio" id="L4X"
+              name="fourth" value="x" class="x">
+              <label for="L4X"> </label>
+              <label for="fourth">Widoczny status postępu.</br></label>
+
+              <input type="radio" id="L5Y"
+              name="fifth" value="yes" class="yes">
+              <label for="L5Y"></label>
+               
+              <input type="radio" id="L5N"
+              name="fifth" value="no" class="no">
+              <label for="L5N"> </label>
+ 
+              <input type="radio" id="L5X"
+              name="fifth" value="x" class="x"> 
+              <label for="L5X"> </label>
+              <label for="fifth">Wyraźne zaznaczenie/ zacienienie aktywnej sekcji.</br></label>
+
+              <input type="radio" id="L6Y"
+              name="sixth" value="yes" class="yes">
+              <label for="L6Y"></label>
+               
+              <input type="radio" id="L6N"
+              name="sixth" value="no" class="no">
+              <label for="L6N"> </label>
+ 
+              <input type="radio" id="L6X"
+              name="sixth" value="x" class="x"> 
+              <label for="L6X"> </label>
+              <label for="sixth">Wykonane akcje potwierdzane komunikatami.</br></label>
+
+              <input type="radio" id="L7Y"
+              name="seventh" value="yes" class="yes">
+              <label for="L7Y"></label>
+               
+              <input type="radio" id="L7N"
+              name="seventh" value="no" class="no">
+              <label for="L7N"> </label>
+ 
+              <input type="radio" id="L7X"
+              name="seventh" value="x" class="x"> 
+              <label for="L7X"> </label>
+              <label for="seventh">Animacja/zmiana koloru naciśniętego przycisku.</br></label>
+
+            
+            
+
+              <div class= "navigation">
+              </div>
+              <div class="test">
+              <div class= "navigation">
+                <a href="#slide-2" class="next_nav" onclick="checkboxes1('h1')" >DALEJ &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+            
+            <div id="slide-2"> <!--  .........................................................................slider2 -->
+                <h5>2. Zapewnij zgodność z naturalną reakcją i wzorcem zachowań </h5>
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+               <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Zastosowane tło w głównym przycisku. </br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Widoczna hierarchia ważności/skalowanie elementów. </br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Zastosowana wizualizacja zamiast tekstu.</br></label>
+   
+ 
+              <input type="radio" id="L4Y"
+              name="fourth" value="yes"class="yes">
+              <label for="L4Y"></label>
+   
+              <input type="radio" id="L4N"
+              name="fourth" value="no" class="no">
+              <label for="L4N"> </label>
+ 
+              <input type="radio" id="L4X"
+              name="fourth" value="x" class="x">
+              <label for="L4X"> </label>
+              <label for="fourth">Główny przycisk znajduje się najniżej (w przypadku ułożenia przycisków jeden pod drugim).</br></label>
+
+              <input type="radio" id="L5Y"
+              name="fifth" value="yes" class="yes">
+              <label for="L5Y"></label>
+               
+               <input type="radio" id="L5N"
+               name="fifth" value="no" class="no">
+               <label for="L5N"> </label>
+ 
+               <input type="radio" id="L5X"
+               name="fifth" value="x" class="x"> 
+               <label for="L5X"> </label>
+               <label for="fifth">Główny przycisk znajduje się z prawej strony (w przypadku dwóch przycisków obok siebie).</br></label>
+
+               <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-3" class="next_nav" onclick="checkboxes1('h2')">DALEJ  &raquo; </a>
+                </div>
+                <div class= "navigation">
+                 <a href="#slide-1" class="back_nav" >&laquo; WRÓĆ</a>
+               </div>
+               
+               </div>
+            
+            </div>
+            
+            <div id="slide-3">  <!--  .........................................................................slider3 -->
+                <h5>3. Daj użytkownikom pełną kontrolę</h5>
+
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+               <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Możliwy wybór języka.</br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Możliwy wybór trybu widoku jasnego/ciemnego.</br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Możliwy powrót do poprzednio wykonywanego kroku.</br></label>
+              <div class= "navigation">
+              </div>
+
+              <div class="test">
+              
+              <div class= "navigation">
+                <a href="#slide-4" class="next_nav" onclick="checkboxes1('h3')">DALEJ &raquo; </a>
+              </div>
+              <div class= "navigation">
+                <a href="#slide-2" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+            </div>
+            </div>
+
+            <div id="slide-4">   <!--  .........................................................................slider4 -->
+                <h5>4.	Zachowaj spójność i zgodność z obowiązującymi zasadami</h5>
+                
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+              <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Interfejs zaprojektowany zgodnie z metodą kciuka.</br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Zastosowane prawo bliskości.</br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Zastosowane prawo ciągłości.</br></label>
+   
+ 
+              <input type="radio" id="L4Y"
+              name="fourth" value="yes"class="yes">
+              <label for="L4Y"></label>
+   
+              <input type="radio" id="L4N"
+              name="fourth" value="no" class="no">
+              <label for="L4N"> </label>
+ 
+              <input type="radio" id="L4X"
+              name="fourth" value="x" class="x">
+              <label for="L4X"> </label>
+              <label for="fourth">Zastosowane prawo podobieństwa.</br></label>
+              
+              <input type="radio" id="L5Y"
+              name="fifth" value="yes" class="yes">
+              <label for="L5Y"></label>
+               
+              <input type="radio" id="L5N"
+              name="fifth" value="no" class="no">
+              <label for="L5N"> </label>
+ 
+              <input type="radio" id="L5X"
+              name="fifth" value="x" class="x"> 
+              <label for="L5X"> </label>
+              <label for="fifth">Zastosowane prawo Fittsa.</br></label>
+
+              <input type="radio" id="L6Y"
+              name="sixth" value="yes" class="yes">
+              <label for="L6Y"></label>
+               
+              <input type="radio" id="L6N"
+              name="sixth" value="no" class="no">
+              <label for="L6N"> </label>
+ 
+              <input type="radio" id="L6X"
+              name="sixth" value="x" class="x"> 
+              <label for="L6X"> </label>
+              <label for="sixth">Ikony tego samego stylu w całej aplikacji.</br></label>
+
+              <input type="radio" id="L7Y"
+              name="seventh" value="yes" class="yes">
+              <label for="L7Y"></label>
+               
+              <input type="radio" id="L7N"
+              name="seventh" value="no" class="no">
+              <label for="L7N"> </label>
+ 
+              <input type="radio" id="L7X"
+              name="seventh" value="x" class="x"> 
+              <label for="L7X"> </label>
+              <label for="seventh">Logo firmy umieszczone w lewym górnym rogu.</br></label>
+
+              <input type="radio" id="L8Y"
+              name="eighth" value="yes" class="yes">
+              <label for="L8Y"></label>
+               
+              <input type="radio" id="L8N"
+              name="eighth" value="no" class="no">
+              <label for="L8N"> </label>
+ 
+              <input type="radio" id="L8X"
+              name="eighth" value="x" class="x"> 
+              <label for="L8X"> </label>
+              <label for="eighth">Odświeżanie poprzez przeciągnięcie w dół.</br></label>
+
+              <input type="radio" id="L9Y"
+              name="ninth" value="yes" class="yes">
+              <label for="L9Y"></label>
+               
+              <input type="radio" id="L9N"
+              name="ninth" value="no" class="no">
+              <label for="L9N"> </label>
+ 
+              <input type="radio" id="L9X"
+              name="ninth" value="x" class="x"> 
+              <label for="L9X"> </label>
+              <label for="ninth">Etykiety i tekst wyrównane do lewej krawędzi.</br></label>
+
+              <input type="radio" id="L8Y"
+              name="tenth" value="yes" class="yes">
+              <label for="L8Y"></label>
+               
+              <input type="radio" id="L8N"
+              name="tenth" value="no" class="no">
+              <label for="L8N"> </label>
+ 
+              <input type="radio" id="L8X"
+              name="tenth" value="x" class="x"> 
+              <label for="L8X"> </label>
+              <label for="tenth">Pływający przycisk umieszczony przy menu dolnym.</br></label>
+              
+              <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-5" class="next_nav" onclick="checkboxes1('h4')"> DALEJ &raquo; </a>
+                </div>
+              <div class= "navigation">
+                <a href="#slide-3" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+              
+              </div>
+
+            </div>
+
+            <div id="slide-5">   <!--  .........................................................................slider5 -->
+                <h5>5. Rozpoznanie ponad przypomnienie </h5>
+
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+              <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Możliwe zapamiętywanie wpisanych haseł.</br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Podane sugestie podczas wyszukania.</br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Najczęściej wybierane opcje wyświetlane jako pierwsze.</br></label>
+              <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-6" class="next_nav" onclick="checkboxes1('h5')"> DALEJ &raquo;</a>
+                </div>
+              <div class= "navigation">
+                <a href="#slide-4" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+            </div>
+            </div>
+
+            <div id="slide-6">   <!--  .........................................................................slider6 -->
+                <h5>6.	Zapewnij minimalistyczny design </h5>
+
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+                <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Brak szczegółów w zastosowanych ikonach.</br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Dodatkowe opcje schowane w zakładce „więcej”.</br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Brak nadmiaru animacji.</br></label>
+   
+              <input type="radio" id="L4Y"
+              name="fourth" value="yes"class="yes">
+              <label for="L4Y"></label>
+   
+              <input type="radio" id="L4N"
+              name="fourth" value="no" class="no">
+              <label for="L4N"> </label>
+ 
+              <input type="radio" id="L4X"
+              name="fourth" value="x" class="x">
+              <label for="L4X"> </label>
+              <label for="fourth">Niewielka ilość użytych obramowań elementów.</br></label>
+
+              <input type="radio" id="L5Y"
+              name="fifth" value="yes" class="yes">
+              <label for="L5Y"></label>
+               
+              <input type="radio" id="L5N"
+              name="fifth" value="no" class="no">
+              <label for="L5N"> </label>
+ 
+              <input type="radio" id="L5X"
+              name="fifth" value="x" class="x"> 
+              <label for="L5X"> </label>
+              <label for="fifth">Stosowanie wysuwanego menu („hamburgera”) przy większej liczbie sekcji.</br></label>
+
+              <input type="radio" id="L6Y"
+              name="sixth" value="yes"class="yes">
+              <label for="L6Y"></label>
+   
+              <input type="radio" id="L6N"
+              name="sixth" value="no" class="no">
+              <label for="L6N"> </label>
+ 
+              <input type="radio" id="L6X"
+              name="sixth" value="x" class="x">
+              <label for="L6X"> </label>
+              <label for="sixth">Stosowanie menu dolnego dla głównych sekcji, gdy ich liczba nie przekracza 5.</br></label>
+
+              <input type="radio" id="L7Y"
+              name="seventh" value="yes" class="yes">
+              <label for="L7Y"></label>
+               
+              <input type="radio" id="L7N"
+              name="seventh" value="no" class="no">
+              <label for="L7N"> </label>
+ 
+              <input type="radio" id="L7X"
+              name="seventh" value="x" class="x"> 
+              <label for="L7X"> </label>
+              <label for="seventh">Użycie minimalnej liczby kroków koniecznych do wykonania zadania.</br></label>
+              <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-7" class="next_nav"onclick="checkboxes1('h6')"> DALEJ &raquo;</a>
+                </div>
+              <div class= "navigation">
+                <a href="#slide-5" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+            </div>
+            </div>
+
+            <div id="slide-7">   <!--  .........................................................................slider7 -->
+                <h5>7.	Zapewnij odpowiednią kolorystykę i kontrast</h5>
+
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+             <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Kontrast wysoki w celu wygodnego odczytania elementów.</br></label>
+
+               <input type="radio" id="L2Y"
+               name="second" value="yes" class="yes">
+               <label for="L2Y"></label>
+   
+               <input type="radio" id="L2N"
+               name="second" value="no" class="no">
+               <label for="L2N"> </label>
+ 
+               <input type="radio" id="L2X"
+               name="second" value="x" class="x">
+               <label for="L2X"> </label>
+               <label for="second">Kontrast niski w przypadku dodatkowych elementów.</br></label>
+   
+ 
+               <input type="radio" id="L3Y"
+               name="third" value="yes" class="yes">
+               <label for="L3Y"></label>
+   
+                <input type="radio" id="L3N"
+                name="third" value="no" class="no">
+               <label for="L3N"> </label>
+ 
+               <input type="radio" id="L3X"
+               name="third" value="x" class="x">
+              <label for="L3X"> </label>
+               <label for="third">Informacje dodatkowe zapisane z użyciem czcionki o mniejszym kontraście.</br></label>
+   
+ 
+               <input type="radio" id="L4Y"
+               name="fourth" value="yes"class="yes">
+               <label for="L4Y"></label>
+   
+               <input type="radio" id="L4N"
+               name="fourth" value="no" class="no">
+               <label for="L4N"> </label>
+ 
+               <input type="radio" id="L4X"
+               name="fourth" value="x" class="x">
+               <label for="L4X"> </label>
+               <label for="fourth">Poziom kontrastu zgodny z WCAG2.1.</br></label>
+
+               <input type="radio" id="L5Y"
+               name="fifth" value="yes" class="yes">
+               <label for="L5Y"></label>
+               
+               <input type="radio" id="L5N"
+               name="fifth" value="no" class="no">
+               <label for="L5N"> </label>
+ 
+               <input type="radio" id="L5X"
+               name="fifth" value="x" class="x"> 
+               <label for="L5X"> </label>
+               <label for="fifth">Spójna kolorystyka zgodna z charakterem aplikacji.</br></label>
+
+               <input type="radio" id="L6Y"
+               name="sixth" value="yes"class="yes">
+               <label for="L6Y"></label>
+   
+               <input type="radio" id="L6N"
+               name="sixth" value="no" class="no">
+               <label for="L6N"> </label>
+ 
+               <input type="radio" id="L6X"
+               name="sixth" value="x" class="x">
+               <label for="L6X"> </label>
+               <label for="sixth">Zestawienie kolorów zgodne ze schematami barw.</br></label>
+
+               <input type="radio" id="L7Y"
+               name="seventh" value="yes" class="yes">
+               <label for="L7Y"></label>
+               
+               <input type="radio" id="L7N"
+               name="seventh" value="no" class="no">
+               <label for="L7N"> </label>
+ 
+               <input type="radio" id="L7X"
+               name="seventh" value="x" class="x"> 
+               <label for="L7X"> </label>
+               <label for="seventh">Wysokie wartości rozmycia oraz niskie krycie cieni.</br></label>
+               <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-8" class="next_nav"  onclick="checkboxes1('h7')"> DALEJ &raquo;</a>
+                </div>
+              <div class= "navigation">
+                <a href="#slide-6" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+
+            </div>
+            </div>
+
+            <div id="slide-8">   <!--  .........................................................................slider8 -->
+                <h5>8. Zadbaj o odpowiednią typografię </h5>
+
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+              <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Rodzaj czcionki pasujący do charakteru aplikacji.</br></label>
+
+               <input type="radio" id="L2Y"
+               name="second" value="yes" class="yes">
+               <label for="L2Y"></label>
+   
+               <input type="radio" id="L2N"
+               name="second" value="no" class="no">
+               <label for="L2N"> </label>
+ 
+               <input type="radio" id="L2X"
+               name="second" value="x" class="x">
+               <label for="L2X"> </label>
+               <label for="second">Klasyczne fonty dla tekstu podstawowego np. Roboto.</br></label>
+   
+ 
+               <input type="radio" id="L3Y"
+               name="third" value="yes" class="yes">
+               <label for="L3Y"></label>
+   
+                <input type="radio" id="L3N"
+                name="third" value="no" class="no">
+               <label for="L3N"> </label>
+ 
+               <input type="radio" id="L3X"
+               name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Zastosowana wizualizacja zamiast tekstu.</br></label>
+   
+ 
+               <input type="radio" id="L4Y"
+               name="fourth" value="yes"class="yes">
+               <label for="L4Y"></label>
+   
+               <input type="radio" id="L4N"
+               name="fourth" value="no" class="no">
+               <label for="L4N"> </label>
+ 
+               <input type="radio" id="L4X"
+               name="fourth" value="x" class="x">
+               <label for="L4X"> </label>
+               <label for="fourth">Zastosowane nie więcej niż 3 różne fonty w aplikacji.</br></label>
+
+               <input type="radio" id="L5Y"
+               name="fifth" value="yes" class="yes">
+               <label for="L5Y"></label>
+               
+               <input type="radio" id="L5N"
+               name="fifth" value="no" class="no">
+               <label for="L5N"> </label>
+ 
+               <input type="radio" id="L5X"
+               name="fifth" value="x" class="x"> 
+               <label for="L5X"> </label>
+               <label for="fifth">Nagłówki sekcji pogrubioną czcionką.</br></label>
+
+               <input type="radio" id="L6Y"
+               name="sixth" value="yes"class="yes">
+               <label for="L6Y"></label>
+   
+               <input type="radio" id="L6N"
+               name="sixth" value="no" class="no">
+               <label for="L6N"> </label>
+ 
+               <input type="radio" id="L6X"
+               name="sixth" value="x" class="x">
+               <label for="L6X"> </label>
+               <label for="sixth">Rozmiar czcionki wynosi nie mniej niż 16px.</br></label>
+
+               <input type="radio" id="L7Y"
+               name="seventh" value="yes" class="yes">
+               <label for="L7Y"></label>
+               
+               <input type="radio" id="L7N"
+               name="seventh" value="no" class="no">
+               <label for="L7N"> </label>
+ 
+               <input type="radio" id="L7X"
+               name="seventh" value="x" class="x"> 
+               <label for="L7X"> </label>
+               <label for="seventh">Zauważalna hierarchia w typografii.</br></label>
+
+               <input type="radio" id="L8Y"
+               name="eighth" value="yes"class="yes">
+               <label for="L8Y"></label>
+   
+               <input type="radio" id="L8N"
+               name="eighth" value="no" class="no">
+               <label for="L8N"> </label>
+ 
+               <input type="radio" id="L8X"
+               name="eighth" value="x" class="x">
+               <label for="L8X"> </label>
+               <label for="eighth">Tekst wyrównany do lewej.</br></label>
+
+               <input type="radio" id="L9Y"
+               name="ninth" value="yes" class="yes">
+               <label for="L9Y"></label>
+               
+               <input type="radio" id="L9N"
+               name="ninth" value="no" class="no">
+               <label for="L9N"> </label>
+ 
+               <input type="radio" id="L9X"
+               name="ninth" value="x" class="x"> 
+               <label for="L9X"> </label>
+               <label for="ninth">Układ jednokolumnowy.</br></label>
+               <div class= "navigation">
+              </div>
+              <div class="test">
+              <div class= "navigation">
+                <div class= "navigation">
+                  <a href="#slide-9" class="next_nav" onclick="checkboxes1('h8')"> DALEJ &raquo; </a>
+                </div>
+                <a href="#slide-7" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+
+            </div>
+            </div>
+            <div id="slide-9">   <!--  .........................................................................slider9 -->
+                <h5>9.	Zadbaj o odpowiednie użycie list</h5>
+
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+              <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Przyciski binarne użyte w celu włączenia/wyłączenia danej funkcji.</br></label>
+
+               <input type="radio" id="L2Y"
+               name="second" value="yes" class="yes">
+               <label for="L2Y"></label>
+   
+               <input type="radio" id="L2N"
+               name="second" value="no" class="no">
+               <label for="L2N"> </label>
+ 
+               <input type="radio" id="L2X"
+               name="second" value="x" class="x">
+               <label for="L2X"> </label>
+               <label for="second">Przyciski akcji dla jednej możliwości wyboru.</br></label>
+   
+ 
+               <input type="radio" id="L3Y"
+               name="third" value="yes" class="yes">
+               <label for="L3Y"></label>
+   
+                <input type="radio" id="L3N"
+                name="third" value="no" class="no">
+               <label for="L3N"> </label>
+ 
+               <input type="radio" id="L3X"
+               name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Lista rozwijana przy wielu elementach.</br></label>
+   
+ 
+               <input type="radio" id="L4Y"
+               name="fourth" value="yes"class="yes">
+               <label for="L4Y"></label>
+   
+               <input type="radio" id="L4N"
+               name="fourth" value="no" class="no">
+               <label for="L4N"> </label>
+ 
+               <input type="radio" id="L4X"
+               name="fourth" value="x" class="x">
+               <label for="L4X"> </label>
+               <label for="fourth">Opcja „inne” dla najrzadziej wybieranych sekcji.</br></label>
+
+               <input type="radio" id="L5Y"
+               name="fifth" value="yes" class="yes">
+               <label for="L5Y"></label>
+               
+               <input type="radio" id="L5N"
+               name="fifth" value="no" class="no">
+               <label for="L5N"> </label>
+ 
+               <input type="radio" id="L5X"
+               name="fifth" value="x" class="x"> 
+               <label for="L5X"> </label>
+               <label for="fifth">Zastosowany suwak przy dużym zakresie wyboru np. ceny.</br></label>
+               <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-10" class="next_nav" onclick="checkboxes1('h9')"> DALEJ &raquo;</a>
+                </div>
+              <div class= "navigation">
+                <a href="#slide-8" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+
+            </div></div>
+
+            <div id="slide-10">   <!--  .........................................................................slider10 -->
+               <h5>10.	Zapobiegaj błędom oraz dezorientacji</h5>
+
+               <div id="radio-title">
+                <div id="yesTitle">
+                 tak
+               </div>
+               <div id="noTitle">
+                 nie
+               </div> 
+               <div id="lack">
+                 nie dotyczy
+               </div>
+             </div> 
+
+              <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Widoczne informacje wyjaśniające wyprzedzające akcje użytkownika .</br></label>
+
+               <input type="radio" id="L2Y"
+               name="second" value="yes" class="yes">
+               <label for="L2Y"></label>
+   
+               <input type="radio" id="L2N"
+               name="second" value="no" class="no">
+               <label for="L2N"> </label>
+ 
+               <input type="radio" id="L2X"
+               name="second" value="x" class="x">
+               <label for="L2X"> </label>
+               <label for="second">Przyciski w formie samego tekstu jedynie w dodatkowych odnośnikach.</br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Elementy statyczne nie posiadają stylu przycisku.</br></label>
+   
+ 
+               <input type="radio" id="L4Y"
+               name="fourth" value="yes"class="yes">
+               <label for="L4Y"></label>
+   
+               <input type="radio" id="L4N"
+               name="fourth" value="no" class="no">
+               <label for="L4N"> </label>
+ 
+               <input type="radio" id="L4X"
+               name="fourth" value="x" class="x">
+               <label for="L4X"> </label>
+               <label for="fourth">Brak specjalistycznych zwrotów w komunikatach.</br></label>
+
+               <input type="radio" id="L5Y"
+               name="fifth" value="yes" class="yes">
+               <label for="L5Y"></label>
+               
+               <input type="radio" id="L5N"
+               name="fifth" value="no" class="no">
+               <label for="L5N"> </label>
+ 
+               <input type="radio" id="L5X"
+               name="fifth" value="x" class="x"> 
+               <label for="L5X"> </label>
+               <label for="fifth">Zastosowane krótkie wyjaśnienia.</br></label>
+
+               <input type="radio" id="L6Y"
+               name="sixth" value="yes" class="yes">
+               <label for="L6Y"></label>
+               
+               <input type="radio" id="L6N"
+               name="sixth" value="no" class="no">
+               <label for="L6N"> </label>
+ 
+               <input type="radio" id="L6X"
+               name="sixth" value="x" class="x"> 
+               <label for="L6X"> </label>
+               <label for="sixth">Pola do zapisu wypełnione przykładowymi odpowiedziami przy użyciu czcionki o niskim kontraście.</br></label>
+               <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-11" class="next_nav"  onclick="checkboxes1('h10')"> DALEJ &raquo;</a>
+                </div>
+              <div class= "navigation">
+                <a href="#slide-9" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+              </div>
+            </div>
+
+            <div id="slide-11">   <!--  .........................................................................slider11 -->
+               <h5>11.	Zapewnij obsługę błędów</h5>
+
+               <div id="radio-title">
+                <div id="yesTitle">
+                 tak
+               </div>
+               <div id="noTitle">
+                 nie
+               </div> 
+               <div id="lack">
+                 nie dotyczy
+               </div>
+             </div> 
+
+              <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Komunikaty o błędach wyświetlane na bieżąco w pobliżu zaistniałego błędu.</br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Komunikaty błędów podawane w formie bezosobowej.</br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Alerty wyświetlane na środku aplikacji.</br></label>
+   
+ 
+              <input type="radio" id="L4Y"
+              name="fourth" value="yes"class="yes">
+              <label for="L4Y"></label>
+   
+              <input type="radio" id="L4N"
+              name="fourth" value="no" class="no">
+              <label for="L4N"> </label>
+ 
+              <input type="radio" id="L4X"
+              name="fourth" value="x" class="x">
+              <label for="L4X"> </label>
+              <label for="fourth"> Widoczna informacja o byciu offline (gdy aplikacja wymaga dostępu do internetu).</br></label>
+              <div class= "navigation">
+              </div>
+              <div class="test">
+                <div class= "navigation">
+                  <a href="#slide-12" class="next_nav" onclick="checkboxes1('h11')"> DALEJ &raquo;</a>
+                </div>
+              <div class= "navigation">
+                <a href="#slide-10" class="back_nav"> &laquo; WRÓĆ </a>
+              </div>
+            </div>
+            </div>
+
+            <div id="slide-12">   <!--  .........................................................................slider12 -->
+                <h5>12.	Zadbaj o pomoc i dokumentację</h5>
+
+                <div id="radio-title">
+                  <div id="yesTitle">
+                   tak
+                 </div>
+                 <div id="noTitle">
+                   nie
+                 </div> 
+                 <div id="lack">
+                   nie dotyczy
+                 </div>
+               </div> 
+
+              <input type="radio" id="L1Y"
+              name="first" value="yes" class="yes">
+              <label for="L1Y"></label>
+   
+              <input type="radio" id="L1N"
+              name="first" value="no" class="no">
+              <label for="L1N"> </label>
+
+              <input type="radio" id="L1X"
+              name="first" value="x" class="x">
+              <label for="L1X"> </label>
+              <label for="first">Zastosowane proste i krótkie samouczki dla nowych użytkowników aplikacji.</br></label>
+
+              <input type="radio" id="L2Y"
+              name="second" value="yes" class="yes">
+              <label for="L2Y"></label>
+   
+              <input type="radio" id="L2N"
+              name="second" value="no" class="no">
+              <label for="L2N"> </label>
+ 
+              <input type="radio" id="L2X"
+              name="second" value="x" class="x">
+              <label for="L2X"> </label>
+              <label for="second">Obecne FAQ.</br></label>
+   
+ 
+              <input type="radio" id="L3Y"
+              name="third" value="yes" class="yes">
+              <label for="L3Y"></label>
+   
+              <input type="radio" id="L3N"
+              name="third" value="no" class="no">
+              <label for="L3N"> </label>
+ 
+              <input type="radio" id="L3X"
+              name="third" value="x" class="x">
+              <label for="L3X"> </label>
+              <label for="third">Widoczna opcja pomocy.</br></label>
+   
+ 
+              <input type="radio" id="L4Y"
+              name="fourth" value="yes"class="yes">
+              <label for="L4Y"></label>
+   
+              <input type="radio" id="L4N"
+              name="fourth" value="no" class="no">
+              <label for="L4N"> </label>
+ 
+              <input type="radio" id="L4X"
+              name="fourth" value="x" class="x">
+              <label for="L4X"> </label>
+              <label for="fourth">Widoczne informacje dotyczące prywatności.</br></label>
+              <div class= "navigation">
+                <!-- <a href="#" class="next" onclick="checkboxes1('h12')" >ZATWIERDŹ </a> -->
+              </div>
+              <div class="test">
+
+                <div class= "navigation">
+                  <a href="#slide-12" class="next_nav" onclick="checkboxes1('h12')">ZATWIERDŹ </a>
+                </div>
+
+              <div class= "navigation">
+                <a href="#slide-11" class="back_nav" > &laquo; WRÓĆ </a>
+              </div></div>
+            </div>
+
+          </div>
+      </div>
+  </div>
+        <div id="gallery">
+          <div class="gallerytitle">
+            <p>Zrzut ekranu</p>
+          </div>
+          <div class="screenshots">
+
+            <ul id="frames" class="frames">
+              <img id="result_positive_img" src="" alt=" ">
+
+            </ul>
+
+
+          </div>
+        </div>
+  </div>
+  </div>  
+</body>
+
+
+<script>
+  
+  function MyFunction(){
+  }
+
+
+
+
+  document.querySelector("#result_positive_img").setAttribute("src", localStorage.getItem("framesLS"))
+
+
+
+
+  </script>

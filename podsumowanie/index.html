@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js" integrity="sha512-pdCVFUWsxl1A4g0uV6fyJ3nrnTGeWnZN2Tl/56j45UvZ1OMdm9CIbctuIHj+yBIRTUUyv6I9+OivXj4i0LPEYA==" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <title>standardy projektowania aplikacji mobilnych</title> 
+
+
+<div id="containerp" >
+    <div id="content">
+        <div id="menu">
+                <div id= "option">
+                    <ul>
+                      
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../heurystyki/index.html">Heurystyki</a></li>
+                            <li> <a href="../obserwacje/index.html">Obserwacje</a></li>
+                            <li><a href="../wnioski/index.html">Wnioski</a></li>
+                            <li><a style="font-weight: bold; color: #40ABCD;" href="#">Podsumowanie</a></li>
+                    </ul>
+                </div>
+        </div>
+        <div id="reportContent">
+            <div id="main">
+                <div id="summaryTitle">
+                    
+                    <div id="pdf">
+                        <button id="download">Zapisz jako  PDF</button>  <!-- .........pdf -->
+                       </div>
+                    <div id="reportTitle">
+                        <h3>Raport audytu eksperckiego</h3>
+                    </div>
+                
+                </div>
+            </div> 
+                <div id="result"><span>
+                    <h4>POZIOM ZGODNOŚCI ZE STANDARDAMI</h4>
+                    <div id="wartosc">
+                    </div></span>
+                </div>
+                <div id="chart_section">
+                    <h4>ZGODNOŚĆ Z HEURYSTYKAMI</h4>
+                    <div id="chart">
+                        <canvas id="myChart" width="350" height="165"></canvas>
+                        </div>                
+                    </div>                
+
+                    <div class=boxes id= "box1">
+                        <h4>DOBRE STRONY INTERFEJSU</h4>
+                        <span class="text_area_summary" id="result_positive"></span>  <!-- .............................localstorage -->
+                    </div> 
+
+                    <div class=boxes id= "box2">
+                        <h4>ELEMENTY WYMAGAJĄCE POPRAWY</h4>
+                        <span class="text_area_summary" id="result_positive2"> </span>
+                    </div>
+
+                    <div class=boxes id= "box3">
+                        <h4>WNIOSKI</h4>
+                        <span class="text_area_summary" id="result_positive3"> </span>
+                    </div> 
+                      
+                    <div class=boxes id= "box4">
+                        <h4>REKOMENDACJE ROZWIĄZANIA</h4>
+                        <span class="text_area_summary" id="result_positive4"></span>
+                    </div> 
+
+    </div>
+</div>  
+</div>
+
+</body>
+
+<script>
+    document.getElementById("result_positive").innerHTML=localStorage.getItem("textvalue");
+    document.getElementById("result_positive2").innerHTML=localStorage.getItem("textvalue2");
+    document.getElementById("result_positive3").innerHTML=localStorage.getItem("textvalue3");
+    document.getElementById("result_positive4").innerHTML=localStorage.getItem("textvalue4");
+
+    var x= document.getElementById("wartosc").innerHTML=localStorage.getItem("result%");
+
+    var h1=localStorage.getItem("h1");
+    var h2=localStorage.getItem("h2");
+    var h3=localStorage.getItem("h3");
+    var h4=localStorage.getItem("h4");
+    var h5=localStorage.getItem("h5");
+    var h6=localStorage.getItem("h6");
+    var h7=localStorage.getItem("h7");
+    var h8=localStorage.getItem("h8");
+    var h9=localStorage.getItem("h9");
+    var h10=localStorage.getItem("h10");
+    var h11=localStorage.getItem("h11");
+    var h12=localStorage.getItem("h12");
+
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Heurystyka1', 'Heurystyka2', 'Heurystyka3', 'Heurystyka4', 'Heurystyka5', 'Heurystyka6', 'Heurystyka7', 'Heurystyka8', 'Heurystyka9', 'Heurystyka10', 'Heurystyka11', 'Heurystyka12'],
+        datasets: [{
+            label: 'Procentowy poziom zgodności ze standardami',
+            backgroundColor: '#40ABCD',
+            borderColor: '#40ABCD',
+            data: [h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12]
+        }]
+    },
+
+    options: {
+                
+    }
+});
+
+
+window.onload = function () {
+    document.getElementById("download")
+        .addEventListener("click", () => {
+            const invoice = this.document.getElementById("reportContent");
+            console.log(invoice);
+            console.log(window);
+            var opt = {
+                margin: 0.08,
+                filename: 'Raport audytu eksperckiego UX.pdf',
+                image: { type: 'jpeg', quality: 1.2 },
+                 html2canvas: { scale: 2.5 },
+                jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+            };
+            html2pdf().from(invoice).set(opt).save();
+        })
+}
+
+</script>

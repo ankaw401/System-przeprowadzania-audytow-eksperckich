@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+  <title>standardy projektowania aplikacji mobilnych</title> 
+
+
+  <div id="container">
+    <div id="content">
+      <div id="menu">
+       <div id= "option">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../heurystyki/index.html">Heurystyki</a></li>
+            <li> <a style="font-weight: bold; color: #40ABCD;" href="#">Obserwacje</a></li>
+            <li><a href="../wnioski/index.html">Wnioski</a></li>
+            <li><a href="../podsumowanie/index.html">Podsumowanie</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="leftSide">
+      <div id="observations1">
+        <div class="gallerytitle">
+          <p>Elementy wymagające poprawy</p>
+        </div>
+          <div id="positive">
+             <textarea maxlength="880" id="txt" name="w3review" rows="18" cols="85"  placeholder="Tutaj przedstaw co wymaga poprawy..."></textarea>  <!-- .......................localstorage -->
+          </div>
+
+          <div id="saveButton">
+            <button type="button" value="click" onclick="passvalue(1)" id="addbutton">ZAPISZ </button>      <!-- .......................localstorage -->
+         </div>
+        </div>
+
+        <div id="observations2">
+           <div class="gallerytitle">
+            <p>Dobre strony interfejsu</p>
+          </div>
+          <div id="negative">
+             <textarea maxlength="880"id="txt2" name="w3review" rows="18" cols="85"   placeholder="Tutaj wpisz dobre strony interfejsu..."></textarea> 
+          </div>
+          <button type="button" value="click" onclick="passvalue(2)" id="addbutton">ZAPISZ </button>
+        </div> 
+
+      <span class="text_area_summary" id="result_positive"></span>  <!-- .............................localstorage -->
+      </div>
+
+      <div id="gallery">
+        <div class="gallerytitle">
+          <p>Zrzut ekranu</p>
+        </div>
+        <div class="screenshots">
+
+          <ul id="frames" class="frames">
+                 <img id="result_positive_img" src="" alt=" "><!-- .............................localstorage -->
+
+          </ul>
+
+
+        </div>
+      </div>
+
+    </div>  
+  </div> 
+
+</body>
+
+<script>
+              document.querySelector("#result_positive_img").setAttribute("src", localStorage.getItem("framesLS"))
+ </script>
