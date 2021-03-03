@@ -5,7 +5,6 @@ function main_buttom() {
   customBtn.addEventListener("click", function(){
     realFileBtn.click();
   });
-  
 }
 
 function passvalue(x){
@@ -28,9 +27,7 @@ function passvalue(x){
     var firstname=document.getElementById("txt4").value;
     localStorage.setItem("textvalue4", firstname);
     return false;
-
-}
-
+  }
 }
 
 
@@ -38,19 +35,15 @@ var resultYes=0;
 var resultAll=0;
 tempAllStorage = 0
 tempYesStorage = 0
-function checkboxes1(nameKey)
+function checkboxes1(nameKey){
 
-{
   countAllFull = 0;
   countYesFull = 0;
- var inputElems = document.getElementsByTagName("input");
- var inputElemsNames = document.getElementsByClassName("yes");
-
- count = 0;
- countYes = 0;
-countAllFull = 0;
-countYesFull = 0;
-
+  var inputElems = document.getElementsByTagName("input");
+  count = 0;
+  countYes = 0;
+  countAllFull = 0;
+  countYesFull = 0;
 
 //zlicza wszystkie yes+no
   for (var i=0; i<inputElems.length; i++) {       
@@ -58,35 +51,27 @@ countYesFull = 0;
         count++;
      }
   }
-  //zlicza yesy
 
-  for (var i=0; i<inputElemsNames.length; i++) {       
-     
-      if(inputElemsNames[i].type == "radio" && inputElemsNames[i].checked == true){
-        countYes++;
-      }
+
+  for (var i=0; i<inputElems.length; i++) {       
+    if (inputElems[i].type == "radio" && inputElems[i].checked == true && inputElems[i].className == "yes"){
+       countYes++;}
   }
+
   countAllFull += count;
   countYesFull += countYes;
   resultYes+=countYesFull;
   resultAll+=countAllFull;
 
-  //alert(countYesFull + "/"+ countAllFull +"..." + resultYes +".." +resultAll);
-  //dodane
+
   //zapis wartosci yes i yes+no z każdej heurystyki - nadpisywane
   localStorage.setItem("resultYesSingle", countYesFull)
   localStorage.setItem("resultAllSingle", countAllFull)
-
   points = countYesFull/countAllFull*100;
-  
-  //dodane
-  //wyciaganie wyniku yes i yes+no i dopisywanie kolejnych wartosci
-  // tempAllStorage = localStorage.getItem("resultAllSingle");
-  // tempYesStorage = localStorage.getItem("resultYesSingle");
+
   tempAllStorage = parseInt(tempAllStorage)
   tempYesStorage = parseInt(tempYesStorage) 
 
-  //dodane
   //liczenie do całosci
   tempAllStorage = tempAllStorage + countAllFull
   tempYesStorage = tempYesStorage + countYesFull
@@ -94,19 +79,25 @@ countYesFull = 0;
   localStorage.setItem("allStorage", tempAllStorage)
 
 
-
-//zmienione result = ...
   var result = tempYesStorage/tempAllStorage;
-  pointsProc=parseInt(result*100, 10)
-
+  pointsProc= countYesFull/countAllFull
+  pointsProc=parseInt(pointsProc*100, 10)
 
   localStorage.setItem(nameKey, pointsProc);
   resultInt=parseInt(result*100, 10)
 
-
   localStorage.setItem("result%",  resultInt+"%");
+
+
+ for (var j=0; j<inputElems.length; j++){
+    if (inputElems[j].type == "radio" && inputElems[j].checked == true && inputElems[j].className != "x"){
+      inputElems[j].checked = false;}
+ }
 
 }
 
+
+
+  
 
 
